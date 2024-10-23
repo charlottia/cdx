@@ -103,4 +103,4 @@ hdx originally reproduced the entire setup described in [Installing an HDL
 toolchain from source] in Nix, and mostly served as a way for me to learn Nix.
 It's since been refined in its scope.
 
-[Installing an HDL toolchain from source]: https://kivikakk.ee/notes/0001-hdl-toolchain-source.html
+[Installing an HDL toolchain from source]: https://lottia.net/notes/0001-hdl-toolchain-source.html
