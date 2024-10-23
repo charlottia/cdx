@@ -19,7 +19,7 @@ editable checkouts at once.)
 
 ## Usage
 
-* `nix develop git+https://hrzn.ee/kivikakk/hdx`
+* `nix develop github:charlottia/hdx`
 
   This is the default mode of operation. Yosys and Amaranth are built and added
   to `PATH`.
@@ -27,13 +27,13 @@ editable checkouts at once.)
   Amaranth is configured to use the Yosys built by hdx, and not its built-in
   one.
 
-* `nix develop git+https://hrzn.ee/kivikakk/hdx#amaranth`
+* `nix develop github:charlottia/hdx#amaranth`
 
   An Amaranth checkout in `./` or `./amaranth/` is expected, and installed in
   editable mode. Yosys is still built, added to `PATH`, and used by your
   Amaranth checkout as usual.
 
-* `nix develop git+https://hrzn.ee/kivikakk/hdx#amaranth-yosys`
+* `nix develop github:charlottia/hdx#amaranth-yosys`
 
   An Amaranth checkout is expected at `./amaranth/`, and a Yosys checkout is
   expected at `./yosys`. Amaranth is installed in editable mode. Yosys is
@@ -46,7 +46,7 @@ editable checkouts at once.)
 
   ```nix
   {
-    inputs.hdx.url = git+https://hrzn.ee/kivikakk/hdx;
+    inputs.hdx.url = github:charlottia/hdx;
 
     outputs = {
       self,
@@ -71,7 +71,7 @@ editable checkouts at once.)
 
     ```nix
     inputs = {
-      hdx.url = git+https://hrzn.ee/kivikakk/hdx;
+      hdx.url = github:charlottia/hdx;
       hdx.inputs.amaranth.url = git+https://codeberg.org/lilnyonker/amaranth?ref=my-feature-branch;
     };
     ```
@@ -84,7 +84,7 @@ To get started, you can use the included flake template:
 ```shell
 mkdir nyonkomatic
 cd nyonkomatic
-nix flake init -t git+https://hrzn.ee/kivikakk/hdx#rainhdx
+nix flake init -t github:charlottia/hdx#rainhdx
 ```
 
 Then you can enter a development environment with `nix develop`. Try `python -m

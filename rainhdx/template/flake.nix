@@ -2,7 +2,7 @@
   description = "rainhdx project template";
 
   inputs = {
-    hdx.url = git+https://hrzn.ee/kivikakk/hdx;
+    hdx.url = github:charlottia/hdx;
     nixpkgs.follows = "hdx/nixpkgs";
     flake-utils.follows = "hdx/flake-utils";
   };

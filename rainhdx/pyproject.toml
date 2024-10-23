@@ -3,7 +3,7 @@ name = "rainhdx"
 version = "0.1"
 description = "A small framework for building projects with Amaranth"
 authors = [
-    {name = "Amelia Cuss", email = "amelia@kivikakk.ee"},
+    {name = "Charlotte", email = "charlotte@lottia.net"},
 ]
 dependencies = [
     "amaranth >= 0.4.4dev1, < 0.6",
