@@ -1,4 +1,4 @@
-# [hdx](https://hrzn.ee/kivikakk/hdx)
+# hdx 
 
 hdx packages [Amaranth] (+ [`-boards`][amaranth-boards],
 [`-stdio`][amaranth-stdio]) and [Yosys] on Nix. These are already available in
