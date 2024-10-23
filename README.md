@@ -90,8 +90,10 @@ nix flake init -t git+https://hrzn.ee/kivikakk/hdx#rainhdx
 Then you can enter a development environment with `nix develop`. Try `python -m
 proj` to see what the default CLI options are.
 
+<!--
 There's a workable example at <https://hrzn.ee/kivikakk/ledmatriks> to check
 out.
+-->
 
 If you want to use your own on-disk checkout of Yosys with your Rain project,
 `nix develop .#yosys` will expect a Yosys checkout at `./yosys` or `../yosys`.
